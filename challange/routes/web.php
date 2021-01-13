@@ -20,4 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/xmlPerson', 'HomeController@xmlPerson')->name('xml.person');
+Route::get('/people', 'PersonController@index')->name('person.index');
+Route::post('/people/upload', 'PersonController@upload')->name('person.upload');
+
+Route::get('/ship-order', 'ShipOrderController@index')->name('ship-order.index');
+Route::post('ship-order/upload', 'ShipOrderController@upload')->name('ship-order.upload');

@@ -16,9 +16,10 @@ class CreatePhone extends Migration
         Schema::create('phone', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('phone');
-            $table->unsignedBigInteger('personid');
-            $table->foreign('personid')->references('personid')->on('person')->onDelete('cascade');
+            $table->unsignedBigInteger('person_id');
+            $table->foreign('person_id')->references('id')->on('person');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Model;
+namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Phone extends Model
 {
@@ -12,25 +13,26 @@ class Phone extends Model
     const UPDATED_AT = 'updated_at';
 
     protected $dates = ['deleted_at'];
+    protected $table = 'phone';
 
     public $fillable = [
         'phone',
-        'personid',
+        'person_id',
     ];
 
     protected $casts = [
         'id'            => 'integer',
         'phone'         => 'string',
-        'personid'      => 'integer',
+        'person_id'     => 'integer',
     ];
 
     public static $rules = [
         'phone'      => 'required',
-        'personid' 	 => 'required',
+        'person_id'  => 'required',
     ];
 
     public function Person()
     {
-        return $this->hasOne('App\Models\person', 'personid');
+        return $this->belongsTo('App\Http\Models\Person', 'id', 'person_id');
     }
 }

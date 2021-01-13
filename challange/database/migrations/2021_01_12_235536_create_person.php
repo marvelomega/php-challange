@@ -14,7 +14,8 @@ class CreatePerson extends Migration
     public function up()
     {
         Schema::create('person', function (Blueprint $table) {
-            $table->bigIncrements('personid');
+            $table->bigIncrements('id');
+            $table->bigInteger('personid');
             $table->string('personname');
             $table->timestamps();
             $table->softDeletes();

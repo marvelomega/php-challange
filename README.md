@@ -3,7 +3,7 @@
 <h3>Features</h3>
 
 <ul>
-    <li>Docker with Ngnix, Php and Mysql Images</li>
+    <li>Docker with Ngnix, Php 7.2 and Mysql 5.7.22 Images</li>
     <li>Laravel 7 with Rest APIs</li>
     <li>Eloquent ORM</li>
     <li>PhpUnity </li>

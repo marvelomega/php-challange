@@ -17,7 +17,7 @@
 <h4>Folders and Files:</h4>
  - config: Container's configuration files <br>
  - src: Laravel Application<br>
- - docker-compose.yml: Docker configuration file
+ - docker-compose.yml: Docker configuration file<br>
  - Dockfiler: Docker configuration file drivers 
     
 <h3>Installation</h3>
@@ -75,7 +75,20 @@
 </ul>
 
 <h4>Tests</h4>
-    <ol>
-        <li>type the following command: <b>cd src</b></li>
-        <li><b>vendor/bin/phpuinit</b> to run all tests</li>
-        <li><b>vendor/bin/phpuinit /test/unit/[test-name]</b> to run a specific test</li>
+<ol>
+    <li>type the following command: <b>cd src</b></li>
+    <li><b>vendor/bin/phpuinit</b> to run all tests</li>
+    <li><b>vendor/bin/phpuinit /test/unit/[test-name]</b> to run a specific test</li>
+</ol>
+
+<h4>Environment Info (.env)</h4>
+DB_CONNECTION=mysql<br>
+DB_HOST=mysqldb<br>
+DB_PORT=3306<br>
+DB_DATABASE=challenge<br>
+DB_USERNAME=root<br>
+DB_PASSWORD=laravel<br>
+
+
+     
+    

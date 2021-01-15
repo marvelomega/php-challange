@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  laravel-app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/usr/share/nginx
+      - ./config/site.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - app-network
+
+
+  mysql:
+    container_name: mysqldb
+    restart: always
+    image: mysql:5.7.22
+    environment:
+      MYSQL_ROOT_PASSWORD: 'laravel'
+      MYSQL_DATABASE: challenge
+      MYSQL_USER: 'root'
+      MYSQL_PASS: 'laravel'
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network  
+
+networks:
+  app-network:
+    driver: bridge

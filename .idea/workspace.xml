@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7060db71-c683-41f6-8304-04869743138f" name="Default Changelist" comment="" />
+    <list default="true" id="7060db71-c683-41f6-8304-04869743138f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/getting-started" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,7 +171,7 @@
       <workItem from="1610647246701" duration="1599000" />
       <workItem from="1610679591086" duration="1721000" />
       <workItem from="1610681387333" duration="1759000" />
-      <workItem from="1610683186427" duration="168000" />
+      <workItem from="1610683186427" duration="506000" />
     </task>
     <servers />
   </component>

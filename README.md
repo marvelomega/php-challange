@@ -9,6 +9,22 @@
     <li>PhpUnity </li>
 </ul>
 <hr>
+
+<h4>GIT and Structure:</h4>
+<ul>
+    <li>Project: 
+        <a href="https://github.com/marvelomega/php-challenge">https://github.com/marvelomega/php-challenge</a>
+     </li>
+     <li>
+        Folders and Files:<br>
+         - config: Container's configuration files <br>
+         - src: Laravel Application<br>
+         - docker-compose.yml: Docker configuration file
+         - Dockfiler: Docker configuration file drivers 
+     </li>
+</ul>
+
+
 <h3>Installation</h3>
 <h4>Docker:</h4>
 <ul>
@@ -32,13 +48,4 @@
     </li>
 </ul>
 
-<h4>GIT:</h4>
-<ul>
-    <li>Documentation: 
-        <a href="https://getcomposer.org/doc/">https://getcomposer.org/doc/</a>
-     </li>
-    <li>Download and Install: 
-        <a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a>
-    </li>
-</ul>
 
